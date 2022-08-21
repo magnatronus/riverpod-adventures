@@ -18,3 +18,5 @@ This is a list of the test projects, and hopefully the list will expand as I try
 ### app_navigator
 A simple use of **StateProvider** to track the status of an app and show a different screen depending on that status.
 
+### persist_app_navigator
+This is a clone of **app_navigator** but as the state of the app chnages the status is persisted using **share_preferences**. This means that even if the app is shut down when it is restarted it will navigate to the screen it was laet on , rather than restarting each time.
