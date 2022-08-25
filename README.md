@@ -24,7 +24,7 @@ This is a clone of **app_navigator** but as the state of the app changes the sta
 Really an example of initialising a StateNotifier **state** value with the result of an *async* call.
 
 ### energy_viewer
-An experiment to view the electricy use for 24 hours and look at the costs as the day goes forward. This is based on a set of smart meter readings that are taken every 
+An experiment to view the electricity use for 24 hours and look at the costs as the day goes forward. This is based on a set of smart meter readings that are taken every 
 30 mins, the data is an actual grab for 24 hours of use.
 
 The kw/h values grabbed are then multiplied by a cost per kilowatt (the tariff) with an initial cost(the standing charge) also factored in. The slider allows you to view then changing cost of the electricity as the day progresses, highlighting the current section in green.
