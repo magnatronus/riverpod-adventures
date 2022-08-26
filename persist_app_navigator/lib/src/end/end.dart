@@ -16,7 +16,7 @@ class EndPage extends ConsumerWidget {
       body: Center(
         child: TextButton(
           onPressed: (){
-            ref.read(appStatusProvider.notifier).persistState(AppStatus.summary);
+            ref.read(appStatusProvider.notifier).setState(AppStatus.summary);
           }, 
           child: const Text("summary"),
         ), 

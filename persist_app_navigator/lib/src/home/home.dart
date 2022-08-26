@@ -16,7 +16,7 @@ class HomePage extends ConsumerWidget {
       body: Center(
         child: TextButton(
           onPressed: (){
-            ref.read(appStatusProvider.notifier).persistState(AppStatus.start);
+            ref.read(appStatusProvider.notifier).setState(AppStatus.start);
           }, 
           child: const Text("start"),
         ), 

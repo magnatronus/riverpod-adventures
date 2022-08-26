@@ -5,13 +5,13 @@ import 'package:intl/intl.dart';
 
 import '../app.dart';
 
-class AppDataColumn extends ConsumerWidget{
+class AppDataColumn extends StatelessWidget{
   final MeterConsumption reading;
   final DateFormat df = DateFormat("HH:mm");
   AppDataColumn({Key? key, required this.reading}) : super(key: key);
   
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Consumer(
       builder: (context, ref, child){
         final currentPage = ref.watch(meterProvider).currentPage;

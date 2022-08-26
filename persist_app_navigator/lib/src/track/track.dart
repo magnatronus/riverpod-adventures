@@ -16,7 +16,7 @@ class TrackPage extends ConsumerWidget {
       body: Center(
         child: TextButton(
           onPressed: (){
-            ref.read(appStatusProvider.notifier).persistState(AppStatus.end);
+            ref.read(appStatusProvider.notifier).setState(AppStatus.end);
           }, 
           child: const Text("end"),
         ), 

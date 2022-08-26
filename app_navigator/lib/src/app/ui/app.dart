@@ -11,10 +11,10 @@ import '../app.dart';
 
 
 /// Our Main Material App
-class App extends ConsumerWidget{
+class App extends StatelessWidget{
   const App({Key? key}) : super(key: key);
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: 'App',
       theme: ThemeData(

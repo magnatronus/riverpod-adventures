@@ -16,7 +16,7 @@ class SummaryPage extends ConsumerWidget {
       body: Center(
         child: TextButton(
           onPressed: (){
-            ref.read(appStatusProvider.notifier).persistState(AppStatus.home);
+            ref.read(appStatusProvider.notifier).setState(AppStatus.home, persist: false);
           }, 
           child: const Text("home"),
         ), 

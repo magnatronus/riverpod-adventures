@@ -24,9 +24,12 @@ class AppStatePersistNotifier extends StateNotifier<AppStatus> {
     state = AppStatus.values[status];
   }
 
-  /// Persist the status to Shared Prefs
-  void persistState(AppStatus status){
-    _prefs.setInt("app.status", status.index);
+  /// Set the [status] and allow it to be persisted.
+  /// By default [persist] is true
+  void setState(AppStatus status, {bool persist = true}){
+    if(persist) {
+      _prefs.setInt("app.status", status.index);
+    }
     state = status;
   }
   

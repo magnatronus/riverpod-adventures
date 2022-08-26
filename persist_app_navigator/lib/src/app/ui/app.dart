@@ -11,10 +11,10 @@ import '../app.dart';
 
 
 /// Our Main Material App
-class App extends ConsumerWidget{
+class App extends StatelessWidget{
   const App({Key? key}) : super(key: key);
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: 'App',
       theme: ThemeData(
@@ -38,7 +38,7 @@ class App extends ConsumerWidget{
                 body:  Center(
                   child: TextButton(
                     onPressed: (){
-                      ref.read(appStatusProvider.notifier).persistState(AppStatus.home);
+                      ref.read(appStatusProvider.notifier).setState(AppStatus.home);
                     }, 
                     child: const Text("home"),
                   ),
